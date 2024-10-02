@@ -1,0 +1,43 @@
+<!--
+HTML
+* HTML stands for HyperText Markup Language
+* HTML is the raw data webpages are made out of 
+* Defines the structure and content of webpages
+* Opening tags <> and closing tags </> 
+* Elements are containers, void elements don't have a closing tag because they don't have any content inside of them
+
+CSS
+* Styling (i.e. fonts)
+
+VSCode Shortcuts
+* ! for the boilerplate
+* CMD + / for comments
+
+-->
+
+<!DOCTYPE html> <!--Signifies which version of HTML-->
+<html lang="en"> <!--Specifies language-->
+<head> <!--Includes meta-info about webpages, no element displaying content is placed here-->
+    <meta charset="UTF-8"> <!--Character set-->
+    <title>Default-Homescreen</title> <!--Title-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive design for multiple devices-->
+</head>
+<body>
+    <h1><b>Welcome Home...</b></h1> <!--Heading... goes up to 6 for different sizes--> <!--Bold-->
+    <p><em>You have been living here for as long as you can remember.</em></p> <!--Paragraph of text--> <!--Italic-->
+    <a href="https://omori.fandom.com/wiki/STORY" target="_blank" rel="noopener noreferrer">About Omori</a> <!--Anchor element, holds links through href=""; target is where the new link gets opened, _blank means a new window; rel defines the relation between the current page and linked doc, noopener prevents it from gaining access to the webpage it was opened from and noreferrer prevents it from knowing which webpage has a link to it-->
+   
+    <p><a href="./pages/second.html">Second Page...</a></p> <!--We can go to other pages on the website-->
+    <ul> <!--Lists of items, ul is unordered-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ol> <!--Lists of items, ol is ordered-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+    <img src = "./images/mewo.png" alt="Mewo from Omori" height="310" width="310"> <!--To display images on your website hosted on your OWN server, use a relative path by making an images folder--> <!--Each dot represents a different directory-->
+</body>
+</html>
+
