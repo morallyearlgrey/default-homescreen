@@ -1,2 +1,2 @@
-# default-homescreen
-Ongoing project... eventually will become a bookmarked page for easy access with hyperlinked icons to active websites
+# Omori's Overlook
+The project involved creating an interactive default home screen that features organized bookmarks for easy access to essential pages, enhancing overall user navigation. A standout element is the innovative lightbulb icon, which allows users to effortlessly toggle between dark mode and light mode, promoting a personalized browsing experience. To ensure user privacy, the design strictly adheres to best practices by omitting any personal data references in the HTML code, thereby safeguarding sensitive information from exposure. Through regular security audits and user feedback, the project not only prioritizes a user-friendly interface but also maintains a robust privacy framework, fostering a safe and enjoyable digital environment.
