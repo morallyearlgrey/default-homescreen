@@ -1,0 +1,268 @@
+/* CSS is made up of selectors and their respective list of rules */
+
+/* SELECTORS */
+/* Universal selector will select ALL elements, denoted by a * */
+/* Type selectors will select all elements of a given element type, will be [element] {} (ex: div {}) */
+/* Class selectors will select all elements with a given class name */
+/* ID selectors will select an element with a given ID and start with #[name] {} but an element can only have one ID, cannot be repeated, you can do id="" to signify it rather than class=""*/
+/* Group selectors will select multiple elements by doing .[name], .[name] {} */
+/* Chaining selectors which allows us to select multiple elements with the same class name but different subclass name (ex: "subsection header" and "subsection preview"), will have syntax .subsection.header to select the subsection header one */
+/* Descendant combinator combines multiple selectors through a parent-child relationship (ex: .ancestor .contents .etc if we had one div class "ancestors" and a class underneath it "contents")  */
+
+/* PROPERTIES */
+/* color: [hexcode, rgb, hsl] */
+/* font-family: (if a browser cannot support the first font in a list, it'll use the next one, so put in a list of good fonts) */
+/* font-size: (size) */
+/* font weight: (boldness of text) */
+/* text-align: (aligns text horizontally within an element, ex: center) */
+/* height: (to adjust the size of img without losing its proportions, do auto) */
+/* width: */
+
+/* EMBEDDING */
+/* We could either do <style></style> in the <head> or <link rel="stylesheet" href="[name].css"> or <div style=...> for each element */
+
+/* PRECEDENCE */
+/* 1. ID selectors 2. Class selectors 3. Type selectors */
+
+/* BUILDING TIPS */
+/* Use inspect to test things out */
+
+/* BOX MODEL AND POSITIONING */
+/* Every single container on a webpage is a rectangular box */
+/* Padding increases the space between the border of the box and the content of the box */
+/* Border adds space between the margin and the padding */
+/* Margin increases the space between the borders of a box and borders of adjacent boxes */
+
+/* BLOCK */
+/* Block elements will appear on the page stakced atop each other */
+/* Inline elements start in line with whatever elements they are placed beside */
+/* Use div for block and span for inline */
+
+/* FLEXBOX */
+/* Arranges items into rows or columns */
+/* Items will grow or shrink depending on rules */
+/* Defined with .flex-container [etc] */
+/* Flex containers have display: flex on them */
+/* Flex items live inside of flex containers */
+
+/* FLEX SHORTHAND */
+/* flex: 1 --> flex-grow:1 flex-shrink: 1 flex-basis: 0 */
+/* flex: x y z% --> flex-grow: x flex-shrink: y flex-basis: z */
+
+/* Flex-grow is the item's growth factor (higher means more growth) */
+/* Flex-shrink is the item's shrink factor (higher means more shrink) */
+/* Flex-basis is the item's baseline size, 0=default and auto=what it is already */
+
+/* AXES */
+/* flex-direction explains if the flexbox will be columns or rows */
+/* Horizontal by default */
+/* flex-direction: row or flex-direction: column */
+
+/* ALIGNMENT */
+/* justify-content aligns content across the main axis (x) */
+/* align-items aligns content across the cross axis (y) */
+/* justify-content: center, left, or right */
+/* align-items: center, left, or right */
+/* gap adds a gap when doing align-items */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+    
+}
+
+@font-face {
+    font-family: omori-font;
+    src: url(./fonts/OMORI_GAME2.ttf);
+}
+
+body {
+    margin: 0px;
+    background-image: url(./images/background.png);
+    background-size: 100%;
+    
+}
+
+.navbar {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+
+}
+
+.navbarContainer {
+    text-align: center;
+    
+
+}
+
+.ntitle {
+    
+    font-family: omori-font;
+    font-size: 6rem;
+    font-weight: lighter;
+    line-height: 80%;
+
+}
+
+.nsubheading {
+    margin: 10px;
+    font-family: omori-font;
+    font-size: 4rem;
+    font-weight: lighter;
+    line-height: 70%;
+
+}
+
+.hero {
+    z-index: 2;
+    
+}
+
+.boxes {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.box1, .box2, .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #FFFFFF;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 30px;
+
+ 
+}
+
+.box1Container, .box2Container, .box3Container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    background-color: #000000;
+    padding: 40px;
+
+}
+
+.imageContainer {
+    justify-content: right;
+    text-align: right;
+    flex-wrap: wrap;
+    display: block;
+    margin-bottom: -200px;
+    margin-top: -100px;
+    margin-right: -100px;
+
+}
+
+.footer2 {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 200px;
+    width: 100%;
+
+    margin-bottom: 150px;
+    
+    padding: 20px;
+
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: left;       
+    justify-content: space-between; 
+    flex-wrap: wrap;           
+    width: 100%;       
+   
+
+    
+}
+
+
+
+.waiting {
+
+    width: 100%;
+
+    font-family: omori-font;
+    font-size: 5rem;
+    color: #FFFFFF;
+    text-align: left;
+    background-color: #000000;
+    
+    padding: 30px;
+
+}
+
+.waitingStroke {
+
+    background-color: #FFFFFF;
+    width: 100%;
+
+    border: 5px solid black;
+    padding: 10px;
+
+    
+}
+
+
+
+.mewoName {
+    
+    width: auto;
+
+    font-family: omori-font;
+    font-size: 5rem;
+    color: #FFFFFF;
+    text-align: left;
+    background-color: #000000;
+    height: auto;
+
+    padding: 10px;
+
+}   
+
+
+.mewoNameStroke {
+
+    background-color: #FFFFFF;
+    border: 5px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+
+
+}
+
+#lightbulb {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+
+}

@@ -15,29 +15,109 @@ VSCode Shortcuts
 
 -->
 
+
 <!DOCTYPE html> <!--Signifies which version of HTML-->
 <html lang="en"> <!--Specifies language-->
 <head> <!--Includes meta-info about webpages, no element displaying content is placed here-->
     <meta charset="UTF-8"> <!--Character set-->
     <title>Default-Homescreen</title> <!--Title-->
+    <link rel="stylesheet" href="styles.css"> <!--Shows what is the designated style sheet-->
+    <script src="./main.js"></script><!--Shows what is the main js file-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive design for multiple devices-->
 </head>
-<body>
-    <h1><b>Welcome Home...</b></h1> <!--Heading... goes up to 6 for different sizes--> <!--Bold-->
-    <p><em>You have been living here for as long as you can remember.</em></p> <!--Paragraph of text--> <!--Italic-->
-    <a href="https://omori.fandom.com/wiki/STORY" target="_blank" rel="noopener noreferrer">About Omori</a> <!--Anchor element, holds links through href=""; target is where the new link gets opened, _blank means a new window; rel defines the relation between the current page and linked doc, noopener prevents it from gaining access to the webpage it was opened from and noreferrer prevents it from knowing which webpage has a link to it-->
-   
-    <p><a href="./pages/second.html">Second Page...</a></p> <!--We can go to other pages on the website-->
-    <ul> <!--Lists of items, ul is unordered-->
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ul>
-    <ol> <!--Lists of items, ol is ordered-->
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ol>
 
-    <img src = "./images/mewo.png" alt="Mewo from Omori" height="310" width="310"> <!--To display images on your website hosted on your OWN server, use a relative path by making an images folder--> <!--Each dot represents a different directory-->
+<body>
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <button id="lightbulb" type="button"><img src="./images/lightbulb.png" height="300"></button>
+            <h1 class="ntitle">WELCOME TO WHITE SPACE.</h1> <!--Heading... goes up to 6 for different sizes--> <!--Bold-->
+            <h2 class="nsubheading">YOU'VE BEEN LIVING HERE FOR AS LONG AS YOU CAN REMEMBER.</h2>
+
+        </div>        
+    </nav>
+
+    <div class="hero">
+        <ul class="boxes">
+            <li class="box1">
+                <div class="box1Container">
+                    <div><a href="https://www.notion.so/UCF-2024-2025-6d3029c574e24bda93a0fff5cf689329" target="blank" rel="noopener noreferrer"><img src="./images/notion.png" height=140></a></div>
+                    <div><a href="https://my.ucf.edu/" target="blank" rel="noopener noreferrer"><img src="./images/ucf.png" height=140></a></div>
+                    <div><a href="https://webcourses.ucf.edu/" target="blank" rel="noopener noreferrer"><img src="./images/canvas.png" height=140></a></div>
+                    <div><a href="https://www.office.com/?auth=2&home=1" target="blank" rel="noopener noreferrer"><img src="./images/office365.png" height=140></a></div>
+                    <div><a href="https://outlook.office.com/mail/" target="blank" rel="noopener noreferrer"><img src="./images/outlook.png" height=140></a></div>
+                    <div><a href="https://mail.google.com/mail/u/0/#inbox" target="blank" rel="noopener noreferrer"><img src="./images/email.png" height=140></a></div>
+                </div>
+            </li>
+            <li class="box2">
+                <div class="box2Container">
+                    <div><a href="https://www.google.com/" target="blank" rel="noopener noreferrer"><img src="./images/google.jpg" height=140></a></div>
+                    <div><a href="https://github.com/morallyearlgrey" target="blank" rel="noopener noreferrer"><img src="./images/github.png" height=140></a></div>
+                    <div><a href="https://replit.com/~" target="blank" rel="noopener noreferrer"><img src="./images/replit.png" height=140></a></div>
+                    <div><a href="https://annas-archive.org/" target="blank" rel="noopener noreferrer"><img src="./images/anna.png" height=140></a></div>
+                    <div><a href="https://www.sci-hub.ee/" target="blank" rel="noopener noreferrer"><img src="./images/scihub.png" height=140></a></div>
+                    <div><a href="https://scholar.google.com/" target="blank" rel="noopener noreferrer"><img src="./images/googlescholar.png" height=140></a></div>
+
+                </div>
+            </li>
+            <li class="box3">
+                <div class="box3Container">
+                    <div><a href="https://www.canva.com/" target="blank" rel="noopener noreferrer"><img src="./images/canva.png" height=140></a></div>
+                    <div><a href="https://www.remove.bg/" target="blank" rel="noopener noreferrer"><img src="./images/rbg.png" height=140></a></div>
+                    <div><a href="https://www.youtube.com/" target="blank" rel="noopener noreferrer"><img src="./images/youtube.png" height=140></a></div>
+                    <div><a href="https://open.spotify.com/" target="blank" rel="noopener noreferrer"><img src="./images/spotify.png" height=140></a></div>
+                    <div><a href="https://www.instagram.com/" target="blank" rel="noopener noreferrer"><img src="./images/instagram.png" height=140></a></div>
+                    <div><a href="https://discord.com/channels/@me" target="blank" rel="noopener noreferrer"><img src="./images/discord.png" height=140></a></div>
+
+                </div>
+            </li>
+        
+        </ul>
+
+        <div class="imageContainer">
+            <div>
+                <img src="./images/omori.png" height=700>
+            </div>
+    
+        </div>
+
+        <footer class="footer2">
+
+            <footer class="footer1">
+                <div class="mewoNameStroke">
+                    <div class="mewoName">MEWO</div>
+                </div>
+
+
+            </footer>
+
+            <div class="waitingStroke">
+                <div class="waiting">Meow? (Waiting for something to happen...?)</div>
+            </div>
+
+        </footer>
+        
+
+    </div>
+
+    
+
+    
+    <!-- Paragraph of text Italic
+    <a href="https://omori.fandom.com/wiki/STORY" target="_blank" rel="noopener noreferrer">About Omori</a> Anchor element, holds links through href=""; target is where the new link gets opened, _blank means a new window; rel defines the relation between the current page and linked doc, noopener prevents it from gaining access to the webpage it was opened from and noreferrer prevents it from knowing which webpage has a link to it-->
+   
+    <!-- <p><a href="./pages/second.html">Second Page...</a></p> We can go to other pages on the website
+        <ul> Lists of items, ul is unordered
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul> -->
+    <!-- <ol> Lists of items, ol is ordered-->
+        <!-- <li>Item 1</li>
+        <li>Item 2</li>
+    </ol> --> 
+
+    <!-- <img src = "./images/mewo.png" alt="Mewo from Omori" height="310" width="310"> To display images on your website hosted on your OWN server, use a relative path by making an images folder Each dot represents a different directory-->
+
+
 </body>
 </html>
 
