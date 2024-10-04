@@ -1,7 +1,7 @@
 if (typeof window != 'undefined') {
 
 window.onload = function() {
-    const lightbulb = document.querySelector("#lightbulb");
+    const lightbulb = document.getElementById("lightbulb");
 
     function changeBackground() {
         let currentBackgroundImage = document.body.style.backgroundImage;
@@ -15,6 +15,8 @@ window.onload = function() {
             const nsubheading = document.getElementById("nsubheading");
             nsubheading.style.color="white";
 
+            document.getElementById("lightbulbimage").src = "./images/blightbulb.png";
+
         } else {
             document.body.style.backgroundImage = "url('./images/background.png')"; 
             const ntitle = document.getElementById("ntitle");
@@ -23,6 +25,8 @@ window.onload = function() {
 
             const nsubheading = document.getElementById("nsubheading");
             nsubheading.style.color="black";
+
+            document.getElementById("lightbulbimage").src = "./images/lightbulb.png";
 
         }
     }
