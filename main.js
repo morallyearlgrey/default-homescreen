@@ -10,6 +10,7 @@ window.onload = function() {
             document.body.style.backgroundImage = "url('./images/blackspace.png')";
             const ntitle = document.getElementById("ntitle");
             ntitle.style.color="white";
+            ntitle.textContent = "WELCOME TO BLACK SPACE.";
 
             const nsubheading = document.getElementById("nsubheading");
             nsubheading.style.color="white";
@@ -18,6 +19,7 @@ window.onload = function() {
             document.body.style.backgroundImage = "url('./images/background.png')"; 
             const ntitle = document.getElementById("ntitle");
             ntitle.style.color="black";
+            ntitle.textContent = "WELCOME TO WHITE SPACE.";
 
             const nsubheading = document.getElementById("nsubheading");
             nsubheading.style.color="black";
