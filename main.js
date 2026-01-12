@@ -3,6 +3,16 @@ if (typeof window != 'undefined') {
 window.onload = function() {
     const lightbulb = document.getElementById("lightbulb");
 
+    updateTime();
+    setInterval(updateTime, 60);
+
+    function updateTime() {
+        const currentTime = new Date();
+        const time = currentTime.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+
+        document.getElementById("clock").textContent=time;
+    }
+
     function changeBackground() {
         let currentBackgroundImage = document.body.style.backgroundImage;
         

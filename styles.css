@@ -121,6 +121,16 @@ body {
 
 }
 
+.nclock {
+    margin: 10px;
+    font-family: omori-font;
+    font-size: 4rem;
+    font-weight: lighter;
+    line-height: 70%;
+    text-align: right;
+
+}
+
 .hero {
     z-index: 2;
     
